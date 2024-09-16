@@ -48,8 +48,8 @@ const Navbar = () => {
     <AppBar
       position="static"
       sx={{
-        bgcolor: 'linear-gradient(to right, #FFD700, #FF4500)',
-        color: '#fff',
+        bgcolor: '#FFF017',
+        color: '#333333',
       }}
     >
       <Toolbar>

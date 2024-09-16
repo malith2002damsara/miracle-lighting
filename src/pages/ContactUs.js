@@ -1,15 +1,30 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button, Typography } from '@mui/material';
+import axios from 'axios';
 
 const ContactUs = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic
-    alert('Message Sent!');
+
+    try {
+      await axios.post('http://localhost:5000/api/contact', {
+        name,
+        email,
+        message,
+      });
+      alert('Message Sent!');
+
+      // Clear the input fields after submission
+      setName('');
+      setEmail('');
+      setMessage('');
+    } catch (error) {
+      alert('Failed to send message');
+    }
   };
 
   return (

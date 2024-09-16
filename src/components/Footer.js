@@ -4,7 +4,7 @@ import { Facebook, Instagram, WhatsApp, Mail } from '@mui/icons-material';
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: '#FFD700', color: '#000', py: 4, textAlign: 'center' }}>
+    <Box sx={{ bgcolor: '#FFF017', color: '#000', py: 4, textAlign: 'center' }}>
       <Typography variant="body1" gutterBottom>
         © 2024 Miracle Lighting. All Rights Reserved.
       </Typography>
