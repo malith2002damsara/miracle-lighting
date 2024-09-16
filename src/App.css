@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF8DC;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, h4, h5 {
+  color: #FFD700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  background-color: #FFC107;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect for ServiceCard */
+.MuiCard-root {
+  transition: transform 0.3s;
+}
+
+.MuiCard-root:hover {
+  transform: scale(1.05);
 }
